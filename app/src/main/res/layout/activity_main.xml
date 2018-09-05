@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/StrScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DexScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/StrScoreTextView"
+        app:layout_constraintEnd_toStartOf="@+id/ConScoreTextView"
+        app:layout_constraintStart_toEndOf="@+id/StrScoreTextView" />
+
+    <TextView
+        android:id="@+id/ConScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DexScoreTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/IntScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/StrScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/StrScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/strTextView" />
+
+    <TextView
+        android:id="@+id/WisScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/IntScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/DexScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/DexScoreTextView" />
+
+    <TextView
+        android:id="@+id/ChaScoreTextView"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/WisScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/ConScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/ConScoreTextView" />
+
+    <TextView
+        android:id="@+id/strTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Strength"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/StrScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/StrScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/StrScoreTextView"
+        tools:text="Strength" />
+
+    <TextView
+        android:id="@+id/dexTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Dexterity"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/DexScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/DexScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/DexScoreTextView"
+        tools:text="Dexterity" />
+
+    <TextView
+        android:id="@+id/conTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Constitution"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/ConScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/ConScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ConScoreTextView"
+        tools:text="Constitution" />
+
+    <TextView
+        android:id="@+id/intTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Inteligence"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/IntScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/IntScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/IntScoreTextView"
+        tools:text="Inteligence" />
+
+    <TextView
+        android:id="@+id/wisTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Wisdom"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/WisScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/WisScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/WisScoreTextView"
+        tools:text="Wisdom" />
+
+    <TextView
+        android:id="@+id/chaTextView"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxHeight="20dp"
+        android:text="Charisma"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/ChaScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/ChaScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ChaScoreTextView"
+        tools:text="Charisma" />
+
+    <Button
+        android:id="@+id/reRollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Roll!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wisTextView" />
+</android.support.constraint.ConstraintLayout>
